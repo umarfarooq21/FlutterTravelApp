@@ -30,7 +30,7 @@ class MySnakbarPage extends StatelessWidget {
                 //foregroundBuilder: Colors.blue,
               ),
               onPressed: () {
-                //---------snak bar work
+                //---------snak bar work------------
                 /*
                 Get.snackbar(
                   "Title", "This is my message.",
@@ -46,7 +46,7 @@ class MySnakbarPage extends StatelessWidget {
                   )
                   );*/
 
-                  //-----------dialog bar
+                  //-----------dialog bar--------------
                   /*
                   Get.defaultDialog(
                     textCancel: "Cancel",
@@ -70,7 +70,7 @@ class MySnakbarPage extends StatelessWidget {
                     ]
                   );*/
                 
-                //----------Bottom-sheet--------
+                //----------Bottom-sheet-----------
                 Get.bottomSheet(
                   Container(
                     child: Wrap(
