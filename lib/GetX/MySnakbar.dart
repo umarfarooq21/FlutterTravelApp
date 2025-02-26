@@ -25,13 +25,9 @@ class MySnakbarPage extends StatelessWidget {
                 
               ),
               TextButton(
-              style: TextButton.styleFrom(
-                //foregroundColor Colors.red,
-                //foregroundBuilder: Colors.blue,
-              ),
-              onPressed: () {
-                //---------snak bar work------------
-                /*
+                
+                onPressed: (){
+                  //---------snak bar work------------
                 Get.snackbar(
                   "Title", "This is my message.",
                   snackPosition: SnackPosition.BOTTOM,
@@ -44,10 +40,15 @@ class MySnakbarPage extends StatelessWidget {
                     Icons.search,
                     color: Colors.white,
                   )
-                  );*/
+                  );
 
+              }, child: const Text('Show Snakbar'),
+              ),
+              TextButton(
+                
+                onPressed: (){
                   //-----------dialog bar--------------
-                  /*
+                  
                   Get.defaultDialog(
                     textCancel: "Cancel",
                     onCancel: () {
@@ -64,11 +65,23 @@ class MySnakbarPage extends StatelessWidget {
                       onPressed: () { 
                         Get.back();
                       },
-                      child: Text('RaisedButton'),
+                      child: const Text('RaisedButton'),
                     )
                                           
                     ]
-                  );*/
+                  );
+
+              }, child: const Text('Show Dailog'),
+              ),
+              TextButton(
+              style: TextButton.styleFrom(
+                //foregroundColor Colors.red,
+                //foregroundBuilder: Colors.blue,
+              ),
+              onPressed: () {
+                
+
+                  
                 
                 //----------Bottom-sheet-----------
                 Get.bottomSheet(
@@ -97,7 +110,7 @@ class MySnakbarPage extends StatelessWidget {
 
                 );
                },
-              child: const Text('Show Snakbar'),
+              child: const Text('Show Bottom Sheet'),
               )
             ],
           ),
